@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Downloads and temp files
+downloads/
+watermarks/
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mkv
+*.mov
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local settings
+bot_settings.json
+
+# GUI app (not needed for server)
+app.py

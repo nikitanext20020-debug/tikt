@@ -1,0 +1,10 @@
+{
+  "watermark_scale": 16,
+  "watermark_opacity": 78,
+  "watermark_position": "bottom-right",
+  "watermark_margin": 20,
+  "ffmpeg_preset": "fast",
+  "ffmpeg_crf": 28,
+  "telegram_token": "8254121885:AAGIw8reJQxki0Gji7tstDXYmo-_AFi_06k",
+  "admin_id": "8235497168"
+}

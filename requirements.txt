@@ -1,0 +1,10 @@
+aiogram==3.10.0
+aiohttp
+aiofiles
+python-dotenv
+yt-dlp>=2025.12.08
+imageio[ffmpeg]
+customtkinter>=5.2.0
+requests
+pysocks  # Для поддержки SOCKS5 прокси
+requests[socks]  # Для requests с SOCKS5
