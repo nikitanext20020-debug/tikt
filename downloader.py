@@ -16,8 +16,7 @@ from config import DOWNLOADS_DIR
 # Ensure download directory exists
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)
 
-# Import proxy settings
-from config import PROXY_URL
+
 
 
 async def download_tiktok_video(url: str) -> Tuple[str, Optional[str]]:
