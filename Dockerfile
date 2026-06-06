@@ -1,32 +1,31 @@
 FROM python:3.11-slim
 
-# Set working directory
+# Рабочая директория
 WORKDIR /app
 
-# Install system dependencies including FFmpeg
+# Установка системных зависимостей
 RUN apt-get update && apt-get install -y \
     ffmpeg \
-    ffprobe \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
+# Копируем зависимости
 COPY requirements.txt .
 
-# Install Python dependencies
+# Устанавливаем Python-зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application files
+# Копируем файлы приложения
 COPY bot.py .
 COPY downloader.py .
 COPY video_processor.py .
 COPY watermark_storage.py .
 COPY config.py .
 
-# Create necessary directories
+# Создаем необходимые директории
 RUN mkdir -p downloads watermarks
 
-# Set environment variables
+# Переменные окружения
 ENV PYTHONUNBUFFERED=1
 
-# Run the bot
+# Запуск бота
 CMD ["python", "bot.py"]
