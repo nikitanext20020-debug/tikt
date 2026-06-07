@@ -12,6 +12,9 @@ TELEGRAM_TOKEN = os.getenv("WM_TELEGRAM_TOKEN", "8254121885:AAGIw8reJQxki0Gji7ts
 # Admin User ID (only this user can use the bot)
 ADMIN_ID = os.getenv("WM_ADMIN_ID", "8235497168")
 
+# Send processed video back to Telegram (True) or just save to folder (False)
+SEND_TO_TELEGRAM = os.getenv("WM_SEND_TO_TELEGRAM", "true").lower() in ("true", "1", "yes")
+
 # Directories
 DOWNLOADS_DIR = "downloads"
 WATERMARK_DIR = "watermarks"
